@@ -3,30 +3,18 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Senior Frontend Engineer — Portfolio</title>
+<title>sukutt.dev — Senior Frontend Engineer</title>
 <meta name="description" content="Senior Frontend Engineer helping product teams ship fast, reliable, and scalable web applications — Next.js migrations, performance optimization, and enterprise SaaS interfaces."/>
-<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<meta property="og:title" content="sukutt.dev — Senior Frontend Engineer"/>
+<meta property="og:description" content="Next.js migrations, web performance, and enterprise SaaS interfaces. I turn tangled, slow frontends into clean, maintainable systems."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://sukutt.github.io/"/>
+<meta name="twitter:card" content="summary"/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232563eb'/%3E%3Ctext x='16' y='22' font-family='Inter,system-ui,sans-serif' font-size='17' font-weight='800' fill='white' text-anchor='middle'%3Es.%3C/text%3E%3C/svg%3E"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet"/>
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          brand: {
-            50: '#eff6ff', 100: '#dbeafe', 200: '#bfdbfe', 300: '#93c5fd',
-            500: '#3b82f6', 600: '#2563eb', 700: '#1d4ed8',
-          },
-          ink: { 900: '#0f172a', 700: '#334155', 600: '#475569', 500: '#64748b', 400: '#94a3b8' },
-          line: '#e2e8f0',
-          canvas: '#ffffff',
-          mist: '#f8fafc',
-        },
-        fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
-      },
-    },
-  }
-</script>
+<link rel="stylesheet" href="tailwind.css"/>
 <style>
   body { font-family: 'Inter', system-ui, sans-serif; color: #334155; background: #ffffff; }
   .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
@@ -151,55 +139,144 @@
     <div class="space-y-6">
       <!-- Project 1 -->
       <article class="bg-white border border-line rounded-2xl p-7 md:p-9 card-shadow">
-        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-4">
-          <h3 class="text-xl md:text-2xl font-semibold text-ink-900">Large-scale Next.js App Router migration</h3>
-          <span class="inline-flex items-center gap-2 text-brand-700 bg-brand-50 px-3 py-1 rounded-full text-sm font-semibold whitespace-nowrap">7 apps → 1 monorepo</span>
-        </div>
-        <p class="text-ink-600 mb-5 max-w-3xl">Migrated 7 independent React apps into one unified Next.js App Router monorepo — building SSR/SSG pages, dynamic and catch-all routing, and safe legacy-path redirects, while resolving complex Turbopack module-duplication and RSC boundary issues.</p>
-        <div class="flex flex-wrap gap-2 text-sm">
-          <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">Next.js</span>
-          <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">App Router</span>
-          <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">Turborepo</span>
-          <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">Migration</span>
+        <div class="flex flex-col lg:flex-row gap-8">
+          <div class="flex-1">
+            <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-4">
+              <h3 class="text-xl md:text-2xl font-semibold text-ink-900">Large-scale Next.js App Router migration</h3>
+              <span class="inline-flex items-center gap-2 text-brand-700 bg-brand-50 px-3 py-1 rounded-full text-sm font-semibold whitespace-nowrap">7 apps → 1 monorepo</span>
+            </div>
+            <p class="text-ink-600 mb-5 max-w-3xl">Migrated 7 independent React apps into one unified Next.js App Router monorepo — building SSR/SSG pages, dynamic and catch-all routing, and safe legacy-path redirects, while resolving complex Turbopack module-duplication and RSC boundary issues.</p>
+            <div class="flex flex-wrap gap-2 text-sm">
+              <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">Next.js</span>
+              <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">App Router</span>
+              <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">Turborepo</span>
+              <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">Migration</span>
+            </div>
+          </div>
+          <figure class="lg:w-80 shrink-0 bg-mist border border-line rounded-xl p-5 flex flex-col justify-center">
+            <svg viewBox="0 0 300 190" role="img" aria-label="Diagram: 7 separate React CSR apps consolidated into one Next.js App Router monorepo" class="w-full h-auto">
+              <text x="8" y="12" font-size="11" font-weight="600" fill="#64748b">7 React CSR apps</text>
+              <g fill="#ffffff" stroke="#cbd5e1">
+                <rect x="8" y="22" width="80" height="16" rx="4"/><rect x="8" y="44" width="80" height="16" rx="4"/><rect x="8" y="66" width="80" height="16" rx="4"/><rect x="8" y="88" width="80" height="16" rx="4"/><rect x="8" y="110" width="80" height="16" rx="4"/><rect x="8" y="132" width="80" height="16" rx="4"/><rect x="8" y="154" width="80" height="16" rx="4"/>
+              </g>
+              <line x1="98" y1="96" x2="128" y2="96" stroke="#94a3b8" stroke-width="1.5"/>
+              <polygon points="128,91 137,96 128,101" fill="#94a3b8"/>
+              <rect x="144" y="42" width="148" height="108" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1.5"/>
+              <text x="218" y="62" font-size="11" font-weight="700" fill="#0f172a" text-anchor="middle">Next.js App Router</text>
+              <g fill="#eff6ff">
+                <rect x="154" y="72" width="128" height="18" rx="4"/><rect x="154" y="96" width="128" height="18" rx="4"/><rect x="154" y="120" width="128" height="18" rx="4"/>
+              </g>
+              <g font-size="10" fill="#1d4ed8" text-anchor="middle">
+                <text x="218" y="84">routes · SSR / SSG</text>
+                <text x="218" y="108">shared UI packages</text>
+                <text x="218" y="132">shared API layer</text>
+              </g>
+            </svg>
+            <figcaption class="text-xs text-ink-500 mt-3 text-center">Anonymized architecture — real project structure</figcaption>
+          </figure>
         </div>
       </article>
       <!-- Project 2 -->
       <article class="bg-white border border-line rounded-2xl p-7 md:p-9 card-shadow">
-        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-4">
-          <h3 class="text-xl md:text-2xl font-semibold text-ink-900">Frontend performance optimization</h3>
-          <span class="inline-flex items-center gap-2 text-brand-700 bg-brand-50 px-3 py-1 rounded-full text-sm font-semibold whitespace-nowrap">76% faster builds</span>
-        </div>
-        <p class="text-ink-600 mb-5 max-w-3xl">Cut build time by 76% by replacing Terser with esbuild, isolated heavy libraries (xlsx, ECharts, jsPDF) behind dynamic imports, and moved route-specific dependencies out of the shared bundle — meaningfully reducing the JavaScript every page had to load.</p>
-        <div class="flex flex-wrap gap-2 text-sm">
-          <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">esbuild</span>
-          <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">Bundle size</span>
-          <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">Dynamic imports</span>
+        <div class="flex flex-col lg:flex-row gap-8">
+          <div class="flex-1">
+            <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-4">
+              <h3 class="text-xl md:text-2xl font-semibold text-ink-900">Frontend performance optimization</h3>
+              <span class="inline-flex items-center gap-2 text-brand-700 bg-brand-50 px-3 py-1 rounded-full text-sm font-semibold whitespace-nowrap">76% faster builds</span>
+            </div>
+            <p class="text-ink-600 mb-5 max-w-3xl">Cut build time by 76% by replacing Terser with esbuild, isolated heavy libraries (xlsx, ECharts, jsPDF) behind dynamic imports, and moved route-specific dependencies out of the shared bundle — meaningfully reducing the JavaScript every page had to load.</p>
+            <div class="flex flex-wrap gap-2 text-sm">
+              <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">esbuild</span>
+              <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">Bundle size</span>
+              <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">Dynamic imports</span>
+            </div>
+          </div>
+          <figure class="lg:w-80 shrink-0 bg-mist border border-line rounded-xl p-5 flex flex-col justify-center">
+            <svg viewBox="0 0 300 120" role="img" aria-label="Bar chart: relative build time cut from 100 percent with Terser to 24 percent with esbuild, a 76 percent reduction" class="w-full h-auto">
+              <text x="8" y="24" font-size="11" fill="#475569">Before · Terser</text>
+              <rect x="8" y="32" width="230" height="14" rx="4" fill="#64748b"/>
+              <text x="246" y="43" font-size="11" fill="#475569">100%</text>
+              <text x="8" y="76" font-size="11" fill="#475569">After · esbuild</text>
+              <rect x="8" y="84" width="55" height="14" rx="4" fill="#2563eb"/>
+              <text x="71" y="95" font-size="11" fill="#475569">24%</text>
+              <text x="292" y="97" font-size="18" font-weight="800" fill="#2563eb" text-anchor="end">−76%</text>
+            </svg>
+            <figcaption class="text-xs text-ink-500 mt-3 text-center">Relative build time — measured on a real production app</figcaption>
+          </figure>
         </div>
       </article>
       <!-- Project 3 -->
       <article class="bg-white border border-line rounded-2xl p-7 md:p-9 card-shadow">
-        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-4">
-          <h3 class="text-xl md:text-2xl font-semibold text-ink-900">Enterprise billing &amp; payment platform</h3>
-          <span class="inline-flex items-center gap-2 text-brand-700 bg-brand-50 px-3 py-1 rounded-full text-sm font-semibold whitespace-nowrap">SaaS monetization</span>
-        </div>
-        <p class="text-ink-600 mb-5 max-w-3xl">Built prepaid and postpaid billing UI, refund and cash-point gating, quota and invoice issuance, and enterprise/trial plan-tier detection with access gating — and fixed race conditions in plan judgment when required data hadn't loaded yet.</p>
-        <div class="flex flex-wrap gap-2 text-sm">
-          <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">Billing</span>
-          <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">Payments</span>
-          <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">SaaS</span>
+        <div class="flex flex-col lg:flex-row gap-8">
+          <div class="flex-1">
+            <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-4">
+              <h3 class="text-xl md:text-2xl font-semibold text-ink-900">Enterprise billing &amp; payment platform</h3>
+              <span class="inline-flex items-center gap-2 text-brand-700 bg-brand-50 px-3 py-1 rounded-full text-sm font-semibold whitespace-nowrap">SaaS monetization</span>
+            </div>
+            <p class="text-ink-600 mb-5 max-w-3xl">Built prepaid and postpaid billing UI, refund and cash-point gating, quota and invoice issuance, and enterprise/trial plan-tier detection with access gating — and fixed race conditions in plan judgment when required data hadn't loaded yet.</p>
+            <div class="flex flex-wrap gap-2 text-sm">
+              <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">Billing</span>
+              <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">Payments</span>
+              <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">SaaS</span>
+            </div>
+          </div>
+          <figure class="lg:w-80 shrink-0 bg-mist border border-line rounded-xl p-5 flex flex-col justify-center">
+            <svg viewBox="0 0 300 192" role="img" aria-label="Flow diagram of the billing feature set: billing plans, plan-tier detection, payment and access gating, quota and invoice issuance, refund policy" class="w-full h-auto">
+              <g>
+                <rect x="55" y="6" width="190" height="24" rx="6" fill="#ffffff" stroke="#cbd5e1"/><rect x="55" y="6" width="3" height="24" rx="1.5" fill="#2563eb"/>
+                <text x="150" y="22" font-size="10.5" fill="#334155" text-anchor="middle">Billing plans · prepaid / postpaid</text>
+                <line x1="150" y1="30" x2="150" y2="42" stroke="#94a3b8"/><polygon points="146,41 150,47 154,41" fill="#94a3b8"/>
+                <rect x="55" y="47" width="190" height="24" rx="6" fill="#ffffff" stroke="#cbd5e1"/><rect x="55" y="47" width="3" height="24" rx="1.5" fill="#2563eb"/>
+                <text x="150" y="63" font-size="10.5" fill="#334155" text-anchor="middle">Plan-tier detection · enterprise / trial</text>
+                <line x1="150" y1="71" x2="150" y2="83" stroke="#94a3b8"/><polygon points="146,82 150,88 154,82" fill="#94a3b8"/>
+                <rect x="55" y="88" width="190" height="24" rx="6" fill="#ffffff" stroke="#cbd5e1"/><rect x="55" y="88" width="3" height="24" rx="1.5" fill="#2563eb"/>
+                <text x="150" y="104" font-size="10.5" fill="#334155" text-anchor="middle">Payment &amp; access gating</text>
+                <line x1="150" y1="112" x2="150" y2="124" stroke="#94a3b8"/><polygon points="146,123 150,129 154,123" fill="#94a3b8"/>
+                <rect x="55" y="129" width="190" height="24" rx="6" fill="#ffffff" stroke="#cbd5e1"/><rect x="55" y="129" width="3" height="24" rx="1.5" fill="#2563eb"/>
+                <text x="150" y="145" font-size="10.5" fill="#334155" text-anchor="middle">Quota &amp; invoice issuance</text>
+                <line x1="150" y1="153" x2="150" y2="165" stroke="#94a3b8"/><polygon points="146,164 150,170 154,164" fill="#94a3b8"/>
+                <rect x="55" y="170" width="190" height="24" rx="6" fill="#ffffff" stroke="#cbd5e1"/><rect x="55" y="170" width="3" height="24" rx="1.5" fill="#2563eb"/>
+                <text x="150" y="186" font-size="10.5" fill="#334155" text-anchor="middle">Refund policy</text>
+              </g>
+            </svg>
+            <figcaption class="text-xs text-ink-500 mt-3 text-center">Feature flow — real scope, anonymized</figcaption>
+          </figure>
         </div>
       </article>
       <!-- Project 4 -->
       <article class="bg-white border border-line rounded-2xl p-7 md:p-9 card-shadow">
-        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-4">
-          <h3 class="text-xl md:text-2xl font-semibold text-ink-900">Enterprise dashboard &amp; desktop-like web app</h3>
-          <span class="inline-flex items-center gap-2 text-brand-700 bg-brand-50 px-3 py-1 rounded-full text-sm font-semibold whitespace-nowrap">Complex UI</span>
-        </div>
-        <p class="text-ink-600 mb-5 max-w-3xl">Built complex browser-based enterprise applications with a desktop-like experience using JavaScript and Ext JS — multi-window interfaces, advanced data grids, and rich interactions — and maintained and improved a large legacy codebase over time.</p>
-        <div class="flex flex-wrap gap-2 text-sm">
-          <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">Ext JS</span>
-          <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">Data grid</span>
-          <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">Enterprise</span>
+        <div class="flex flex-col lg:flex-row gap-8">
+          <div class="flex-1">
+            <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-4">
+              <h3 class="text-xl md:text-2xl font-semibold text-ink-900">Enterprise dashboard &amp; desktop-like web app</h3>
+              <span class="inline-flex items-center gap-2 text-brand-700 bg-brand-50 px-3 py-1 rounded-full text-sm font-semibold whitespace-nowrap">Complex UI</span>
+            </div>
+            <p class="text-ink-600 mb-5 max-w-3xl">Built complex browser-based enterprise applications with a desktop-like experience using JavaScript and Ext JS — multi-window interfaces, advanced data grids, and rich interactions — and maintained and improved a large legacy codebase over time.</p>
+            <div class="flex flex-wrap gap-2 text-sm">
+              <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">Ext JS</span>
+              <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">Data grid</span>
+              <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">Enterprise</span>
+            </div>
+          </div>
+          <figure class="lg:w-80 shrink-0 bg-mist border border-line rounded-xl p-5 flex flex-col justify-center">
+            <svg viewBox="0 0 300 190" role="img" aria-label="Anonymized wireframe of a desktop-like enterprise web application with multiple windows, a sidebar, and a data grid" class="w-full h-auto">
+              <rect x="30" y="8" width="262" height="150" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+              <rect x="8" y="28" width="262" height="154" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+              <line x1="8" y1="50" x2="270" y2="50" stroke="#e2e8f0"/>
+              <circle cx="22" cy="39" r="3" fill="#e2e8f0"/><circle cx="34" cy="39" r="3" fill="#e2e8f0"/><circle cx="46" cy="39" r="3" fill="#e2e8f0"/>
+              <line x1="76" y1="50" x2="76" y2="182" stroke="#e2e8f0"/>
+              <rect x="18" y="62" width="46" height="7" rx="3.5" fill="#2563eb"/>
+              <rect x="18" y="78" width="46" height="7" rx="3.5" fill="#e2e8f0"/>
+              <rect x="18" y="94" width="46" height="7" rx="3.5" fill="#e2e8f0"/>
+              <rect x="18" y="110" width="46" height="7" rx="3.5" fill="#e2e8f0"/>
+              <rect x="86" y="60" width="174" height="10" rx="3" fill="#eff6ff"/>
+              <rect x="86" y="78" width="174" height="11" rx="2" fill="#e2e8f0"/>
+              <g fill="#f1f5f9">
+                <rect x="86" y="93" width="174" height="9" rx="2"/><rect x="86" y="106" width="174" height="9" rx="2"/><rect x="86" y="119" width="174" height="9" rx="2"/><rect x="86" y="132" width="174" height="9" rx="2"/><rect x="86" y="145" width="174" height="9" rx="2"/><rect x="86" y="158" width="174" height="9" rx="2"/>
+              </g>
+            </svg>
+            <figcaption class="text-xs text-ink-500 mt-3 text-center">Anonymized UI — multi-window · data grids</figcaption>
+          </figure>
         </div>
       </article>
     </div>
