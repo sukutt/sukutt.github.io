@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Senior Frontend Engineer — Portfolio</title>
+<meta name="description" content="Senior Frontend Engineer helping product teams ship fast, reliable, and scalable web applications — Next.js migrations, performance optimization, and enterprise SaaS interfaces."/>
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet"/>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          brand: {
+            50: '#eff6ff', 100: '#dbeafe', 200: '#bfdbfe', 300: '#93c5fd',
+            500: '#3b82f6', 600: '#2563eb', 700: '#1d4ed8',
+          },
+          ink: { 900: '#0f172a', 700: '#334155', 600: '#475569', 500: '#64748b', 400: '#94a3b8' },
+          line: '#e2e8f0',
+          canvas: '#ffffff',
+          mist: '#f8fafc',
+        },
+        fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+      },
+    },
+  }
+</script>
+<style>
+  body { font-family: 'Inter', system-ui, sans-serif; color: #334155; background: #ffffff; }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+  .card-shadow { box-shadow: 0 1px 2px rgba(15,23,42,0.04), 0 8px 24px rgba(15,23,42,0.06); }
+</style>
+</head>
+<body class="antialiased">
+
+<!-- NAV -->
+<nav class="fixed top-0 inset-x-0 z-50 bg-white/85 backdrop-blur-md border-b border-line">
+  <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+    <a class="font-bold text-ink-900 tracking-tight text-lg" href="#top">sukutt<span class="text-brand-600">.</span>dev</a>
+    <div class="hidden md:flex items-center gap-8 text-sm font-medium text-ink-600">
+      <a class="hover:text-ink-900 transition-colors" href="#work">Work</a>
+      <a class="hover:text-ink-900 transition-colors" href="#expertise">Expertise</a>
+      <a class="hover:text-ink-900 transition-colors" href="#process">How I work</a>
+      <a class="hover:text-ink-900 transition-colors" href="#contact">Contact</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <a class="hidden sm:inline-flex bg-brand-600 text-white px-5 py-2 rounded-lg text-sm font-semibold hover:bg-brand-700 transition-colors" href="#contact">Hire me</a>
+      <button aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation" class="md:hidden flex items-center text-ink-700 hover:text-ink-900" id="menu-toggle">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </div>
+  <div class="hidden md:hidden flex-col gap-1 border-t border-line bg-white px-6 py-3 text-sm font-medium text-ink-600" id="mobile-menu">
+    <a class="py-2 hover:text-ink-900" href="#work">Work</a>
+    <a class="py-2 hover:text-ink-900" href="#expertise">Expertise</a>
+    <a class="py-2 hover:text-ink-900" href="#process">How I work</a>
+    <a class="py-2 hover:text-ink-900" href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="pt-32 pb-20 md:pt-40 md:pb-28" id="top">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="max-w-3xl">
+      <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-50 text-brand-700 text-sm font-medium mb-6">
+        <span class="w-2 h-2 rounded-full bg-emerald-500"></span> Available for new projects
+      </span>
+      <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-ink-900 leading-[1.1] mb-6">
+        I help product teams ship web apps that are
+        <span class="text-brand-600">fast, reliable, and scalable.</span>
+      </h1>
+      <p class="text-lg md:text-xl text-ink-600 leading-relaxed mb-9 max-w-2xl">
+        Senior Frontend Engineer specializing in large-scale Next.js migrations, performance
+        optimization, and complex enterprise SaaS interfaces. I turn tangled, slow frontends
+        into clean, maintainable systems your team can move quickly on.
+      </p>
+      <div class="flex flex-wrap gap-4 mb-14">
+        <a class="bg-brand-600 text-white px-7 py-3.5 rounded-lg font-semibold hover:bg-brand-700 transition-colors" href="#contact">Start a conversation</a>
+        <a class="border border-line text-ink-700 px-7 py-3.5 rounded-lg font-semibold hover:border-ink-400 hover:text-ink-900 transition-colors" href="#work">See my work</a>
+      </div>
+      <!-- STATS -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 border-t border-line pt-10">
+        <div>
+          <div class="text-3xl md:text-4xl font-extrabold text-ink-900">76%</div>
+          <div class="text-sm text-ink-500 mt-1">faster build times delivered</div>
+        </div>
+        <div>
+          <div class="text-3xl md:text-4xl font-extrabold text-ink-900">7&nbsp;→&nbsp;1</div>
+          <div class="text-sm text-ink-500 mt-1">apps unified into one platform</div>
+        </div>
+        <div>
+          <div class="text-3xl md:text-4xl font-extrabold text-ink-900">Enterprise</div>
+          <div class="text-sm text-ink-500 mt-1">SaaS billing &amp; dashboards</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERTISE -->
+<section class="py-20 md:py-24 bg-mist border-y border-line" id="expertise">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="max-w-2xl mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-ink-900 mb-4">What I can help you with</h2>
+      <p class="text-lg text-ink-600">Senior-level frontend work for products that have outgrown their original codebase.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-white border border-line rounded-2xl p-7 card-shadow">
+        <div class="w-11 h-11 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center mb-5"><span class="material-symbols-outlined">architecture</span></div>
+        <h3 class="text-lg font-semibold text-ink-900 mb-2">Large-scale architecture</h3>
+        <p class="text-ink-600">Consolidating separated, hard-to-maintain apps into one clean, scalable frontend platform.</p>
+      </div>
+      <div class="bg-white border border-line rounded-2xl p-7 card-shadow">
+        <div class="w-11 h-11 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center mb-5"><span class="material-symbols-outlined">trending_up</span></div>
+        <h3 class="text-lg font-semibold text-ink-900 mb-2">Performance optimization</h3>
+        <p class="text-ink-600">Faster builds and lighter pages — esbuild migration, dynamic imports, and leaner route-level JavaScript.</p>
+      </div>
+      <div class="bg-white border border-line rounded-2xl p-7 card-shadow">
+        <div class="w-11 h-11 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center mb-5"><span class="material-symbols-outlined">payments</span></div>
+        <h3 class="text-lg font-semibold text-ink-900 mb-2">Enterprise SaaS workflows</h3>
+        <p class="text-ink-600">Billing, payment, refund, quota, invoice, and plan-tier flows built to be reliable and maintainable.</p>
+      </div>
+      <div class="bg-white border border-line rounded-2xl p-7 card-shadow">
+        <div class="w-11 h-11 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center mb-5"><span class="material-symbols-outlined">swap_horiz</span></div>
+        <h3 class="text-lg font-semibold text-ink-900 mb-2">Next.js migration</h3>
+        <p class="text-ink-600">Moving React apps to the Next.js App Router — SSR/SSG, dynamic routing, and safe legacy redirects.</p>
+      </div>
+      <div class="bg-white border border-line rounded-2xl p-7 card-shadow">
+        <div class="w-11 h-11 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center mb-5"><span class="material-symbols-outlined">dashboard</span></div>
+        <h3 class="text-lg font-semibold text-ink-900 mb-2">Complex UI &amp; state</h3>
+        <p class="text-ink-600">Managing intricate UI and application state at scale with React Query and MobX in large codebases.</p>
+      </div>
+      <div class="bg-white border border-line rounded-2xl p-7 card-shadow">
+        <div class="w-11 h-11 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center mb-5"><span class="material-symbols-outlined">shield</span></div>
+        <h3 class="text-lg font-semibold text-ink-900 mb-2">Production reliability</h3>
+        <p class="text-ink-600">Diagnosing and fixing production-only issues — minification edge cases, data-timing race conditions, and more.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section class="py-20 md:py-24" id="work">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="max-w-2xl mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-ink-900 mb-4">Selected work</h2>
+      <p class="text-lg text-ink-600">A few projects that show the kind of problems I solve. Visuals are anonymized.</p>
+    </div>
+    <div class="space-y-6">
+      <!-- Project 1 -->
+      <article class="bg-white border border-line rounded-2xl p-7 md:p-9 card-shadow">
+        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-4">
+          <h3 class="text-xl md:text-2xl font-semibold text-ink-900">Large-scale Next.js App Router migration</h3>
+          <span class="inline-flex items-center gap-2 text-brand-700 bg-brand-50 px-3 py-1 rounded-full text-sm font-semibold whitespace-nowrap">7 apps → 1 monorepo</span>
+        </div>
+        <p class="text-ink-600 mb-5 max-w-3xl">Migrated 7 independent React apps into one unified Next.js App Router monorepo — building SSR/SSG pages, dynamic and catch-all routing, and safe legacy-path redirects, while resolving complex Turbopack module-duplication and RSC boundary issues.</p>
+        <div class="flex flex-wrap gap-2 text-sm">
+          <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">Next.js</span>
+          <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">App Router</span>
+          <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">Turborepo</span>
+          <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">Migration</span>
+        </div>
+      </article>
+      <!-- Project 2 -->
+      <article class="bg-white border border-line rounded-2xl p-7 md:p-9 card-shadow">
+        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-4">
+          <h3 class="text-xl md:text-2xl font-semibold text-ink-900">Frontend performance optimization</h3>
+          <span class="inline-flex items-center gap-2 text-brand-700 bg-brand-50 px-3 py-1 rounded-full text-sm font-semibold whitespace-nowrap">76% faster builds</span>
+        </div>
+        <p class="text-ink-600 mb-5 max-w-3xl">Cut build time by 76% by replacing Terser with esbuild, isolated heavy libraries (xlsx, ECharts, jsPDF) behind dynamic imports, and moved route-specific dependencies out of the shared bundle — meaningfully reducing the JavaScript every page had to load.</p>
+        <div class="flex flex-wrap gap-2 text-sm">
+          <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">esbuild</span>
+          <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">Bundle size</span>
+          <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">Dynamic imports</span>
+        </div>
+      </article>
+      <!-- Project 3 -->
+      <article class="bg-white border border-line rounded-2xl p-7 md:p-9 card-shadow">
+        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-4">
+          <h3 class="text-xl md:text-2xl font-semibold text-ink-900">Enterprise billing &amp; payment platform</h3>
+          <span class="inline-flex items-center gap-2 text-brand-700 bg-brand-50 px-3 py-1 rounded-full text-sm font-semibold whitespace-nowrap">SaaS monetization</span>
+        </div>
+        <p class="text-ink-600 mb-5 max-w-3xl">Built prepaid and postpaid billing UI, refund and cash-point gating, quota and invoice issuance, and enterprise/trial plan-tier detection with access gating — and fixed race conditions in plan judgment when required data hadn't loaded yet.</p>
+        <div class="flex flex-wrap gap-2 text-sm">
+          <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">Billing</span>
+          <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">Payments</span>
+          <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">SaaS</span>
+        </div>
+      </article>
+      <!-- Project 4 -->
+      <article class="bg-white border border-line rounded-2xl p-7 md:p-9 card-shadow">
+        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-4">
+          <h3 class="text-xl md:text-2xl font-semibold text-ink-900">Enterprise dashboard &amp; desktop-like web app</h3>
+          <span class="inline-flex items-center gap-2 text-brand-700 bg-brand-50 px-3 py-1 rounded-full text-sm font-semibold whitespace-nowrap">Complex UI</span>
+        </div>
+        <p class="text-ink-600 mb-5 max-w-3xl">Built complex browser-based enterprise applications with a desktop-like experience using JavaScript and Ext JS — multi-window interfaces, advanced data grids, and rich interactions — and maintained and improved a large legacy codebase over time.</p>
+        <div class="flex flex-wrap gap-2 text-sm">
+          <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">Ext JS</span>
+          <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">Data grid</span>
+          <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">Enterprise</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS / HOW I WORK -->
+<section class="py-20 md:py-24 bg-mist border-y border-line" id="process">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="max-w-2xl mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-ink-900 mb-4">How I work</h2>
+      <p class="text-lg text-ink-600">Senior engineering is as much about communication and judgment as it is about code.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
+      <div class="flex gap-4">
+        <div class="w-10 h-10 shrink-0 rounded-xl bg-white border border-line text-brand-600 flex items-center justify-center"><span class="material-symbols-outlined">forum</span></div>
+        <div>
+          <h3 class="font-semibold text-ink-900 mb-1">Clear, regular communication</h3>
+          <p class="text-ink-600">You always know where things stand. I share progress, flag blockers early, and keep updates jargon-free.</p>
+        </div>
+      </div>
+      <div class="flex gap-4">
+        <div class="w-10 h-10 shrink-0 rounded-xl bg-white border border-line text-brand-600 flex items-center justify-center"><span class="material-symbols-outlined">target</span></div>
+        <div>
+          <h3 class="font-semibold text-ink-900 mb-1">Senior ownership</h3>
+          <p class="text-ink-600">I scope the work, surface trade-offs and risks, and take responsibility for delivery — not just the code I'm handed.</p>
+        </div>
+      </div>
+      <div class="flex gap-4">
+        <div class="w-10 h-10 shrink-0 rounded-xl bg-white border border-line text-brand-600 flex items-center justify-center"><span class="material-symbols-outlined">verified</span></div>
+        <div>
+          <h3 class="font-semibold text-ink-900 mb-1">Built for production</h3>
+          <p class="text-ink-600">I optimize for reliability and maintainability, not just demos — including the production-only edge cases others miss.</p>
+        </div>
+      </div>
+      <div class="flex gap-4">
+        <div class="w-10 h-10 shrink-0 rounded-xl bg-white border border-line text-brand-600 flex items-center justify-center"><span class="material-symbols-outlined">schedule</span></div>
+        <div>
+          <h3 class="font-semibold text-ink-900 mb-1">Flexible engagement</h3>
+          <p class="text-ink-600">Available for focused projects or ongoing collaboration — fixed scope or hourly, whatever fits your team.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="py-24 md:py-32" id="contact">
+  <div class="max-w-3xl mx-auto px-6 text-center">
+    <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight text-ink-900 mb-5">Have a complex frontend project?</h2>
+    <p class="text-lg md:text-xl text-ink-600 mb-10 max-w-2xl mx-auto">
+      Whether it's a migration, a performance problem, or an enterprise app that needs a senior hand —
+      tell me what you're building and I'll tell you how I can help.
+    </p>
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+      <a class="bg-brand-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-brand-700 transition-colors w-full sm:w-auto" href="mailto:realsukutt@gmail.com">Email me</a>
+      <a class="inline-flex items-center justify-center gap-2 border border-line text-ink-700 px-8 py-4 rounded-lg font-semibold text-lg hover:border-ink-400 hover:text-ink-900 transition-colors w-full sm:w-auto" href="https://github.com/sukutt" target="_blank" rel="noopener noreferrer">
+        <span class="material-symbols-outlined">code</span> GitHub
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="border-t border-line py-10">
+  <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-ink-500">
+    <div class="font-semibold text-ink-700">sukutt<span class="text-brand-600">.</span>dev</div>
+    <div>© 2026 · Senior Frontend Engineer</div>
+    <a class="hover:text-ink-900 transition-colors" href="https://github.com/sukutt" target="_blank" rel="noopener noreferrer">GitHub</a>
+  </div>
+</footer>
+
+<script>
+  // Mobile menu toggle
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const setMenu = (open) => {
+    mobileMenu.classList.toggle('hidden', !open);
+    mobileMenu.classList.toggle('flex', open);
+    menuToggle.setAttribute('aria-expanded', String(open));
+    menuToggle.querySelector('.material-symbols-outlined').textContent = open ? 'close' : 'menu';
+  };
+  menuToggle.addEventListener('click', () => setMenu(mobileMenu.classList.contains('hidden')));
+
+  // Close mobile menu after tapping an in-page link
+  document.querySelectorAll('#mobile-menu a[href^="#"]').forEach(a =>
+    a.addEventListener('click', () => setMenu(false))
+  );
+</script>
+</body>
+</html>
