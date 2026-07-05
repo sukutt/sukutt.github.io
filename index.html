@@ -61,8 +61,8 @@
       </h1>
       <p class="text-lg md:text-xl text-ink-600 leading-relaxed mb-9 max-w-2xl">
         Senior Frontend Engineer specializing in large-scale Next.js migrations, performance
-        optimization, and complex enterprise SaaS interfaces. I turn tangled, slow frontends
-        into clean, maintainable systems your team can move quickly on.
+        optimization, AI product interfaces, and complex enterprise SaaS. I turn tangled, slow
+        frontends into clean, maintainable systems your team can move quickly on.
       </p>
       <div class="flex flex-wrap gap-4 mb-14">
         <a class="bg-brand-600 text-white px-7 py-3.5 rounded-lg font-semibold hover:bg-brand-700 transition-colors" href="#contact">Start a conversation</a>
@@ -79,8 +79,8 @@
           <div class="text-sm text-ink-500 mt-1">apps unified into one platform</div>
         </div>
         <div>
-          <div class="text-3xl md:text-4xl font-extrabold text-ink-900">Enterprise</div>
-          <div class="text-sm text-ink-500 mt-1">SaaS billing &amp; dashboards</div>
+          <div class="text-3xl md:text-4xl font-extrabold text-ink-900">−47%</div>
+          <div class="text-sm text-ink-500 mt-1">shared JS bundle (4.0 → 2.1 MB gzip)</div>
         </div>
       </div>
     </div>
@@ -116,9 +116,9 @@
         <p class="text-ink-600">Moving React apps to the Next.js App Router — SSR/SSG, dynamic routing, and safe legacy redirects.</p>
       </div>
       <div class="bg-white border border-line rounded-2xl p-7 card-shadow">
-        <div class="w-11 h-11 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center mb-5"><span class="material-symbols-outlined">dashboard</span></div>
-        <h3 class="text-lg font-semibold text-ink-900 mb-2">Complex UI &amp; state</h3>
-        <p class="text-ink-600">Managing intricate UI and application state at scale with React Query and MobX in large codebases.</p>
+        <div class="w-11 h-11 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center mb-5"><span class="material-symbols-outlined">smart_toy</span></div>
+        <h3 class="text-lg font-semibold text-ink-900 mb-2">AI product frontends</h3>
+        <p class="text-ink-600">Streaming (SSE) chat interfaces, LLM-powered research tools, and the UX patterns that make long AI jobs feel fast.</p>
       </div>
       <div class="bg-white border border-line rounded-2xl p-7 card-shadow">
         <div class="w-11 h-11 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center mb-5"><span class="material-symbols-outlined">shield</span></div>
@@ -176,6 +176,56 @@
           </figure>
         </div>
       </article>
+      <!-- Project: AI chat -->
+      <article class="bg-white border border-line rounded-2xl p-7 md:p-9 card-shadow">
+        <div class="flex flex-col lg:flex-row gap-8">
+          <div class="flex-1">
+            <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-4">
+              <h3 class="text-xl md:text-2xl font-semibold text-ink-900">AI research chat &amp; LLM product frontend</h3>
+              <span class="inline-flex items-center gap-2 text-brand-700 bg-brand-50 px-3 py-1 rounded-full text-sm font-semibold whitespace-nowrap">SSE streaming</span>
+            </div>
+            <p class="text-ink-600 mb-5 max-w-3xl">Built the frontend for a suite of AI features on a consumer-insights SaaS product — a streaming AI chat (Server-Sent Events) with rich answer cards, an AI recommendation canvas, 1:1 interviews with synthetic consumer personas, and an AI concept-testing studio — including the streaming hard parts: delta/metadata event contracts and progress UX for long LLM jobs.</p>
+            <div class="flex flex-wrap gap-2 text-sm">
+              <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">SSE / streaming</span>
+              <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">LLM integration</span>
+              <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">Chat UX</span>
+            </div>
+          </div>
+          <figure class="lg:w-80 shrink-0 bg-mist border border-line rounded-xl p-5 flex flex-col justify-center">
+            <svg viewBox="0 0 300 190" role="img" aria-label="Anonymized wireframe of a streaming AI chat with an answer card and a detail canvas panel" class="w-full h-auto">
+              <rect x="8" y="8" width="180" height="174" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+              <rect x="100" y="20" width="76" height="16" rx="8" fill="#eff6ff"/>
+              <g fill="#f1f5f9">
+                <rect x="16" y="48" width="120" height="8" rx="4"/>
+                <rect x="16" y="62" width="100" height="8" rx="4"/>
+                <rect x="16" y="76" width="88" height="8" rx="4"/>
+              </g>
+              <rect x="108" y="76" width="3" height="10" fill="#2563eb"/>
+              <rect x="16" y="96" width="144" height="44" rx="6" fill="#ffffff" stroke="#2563eb"/>
+              <rect x="24" y="104" width="60" height="7" rx="3.5" fill="#bfdbfe"/>
+              <rect x="24" y="118" width="42" height="12" rx="6" fill="#eff6ff"/>
+              <rect x="72" y="118" width="48" height="12" rx="6" fill="#eff6ff"/>
+              <rect x="16" y="156" width="132" height="16" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+              <circle cx="168" cy="164" r="9" fill="#2563eb"/>
+              <rect x="196" y="8" width="96" height="174" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+              <rect x="204" y="18" width="56" height="8" rx="4" fill="#cbd5e1"/>
+              <g fill="#e2e8f0">
+                <rect x="204" y="36" width="80" height="6" rx="3"/>
+                <rect x="204" y="48" width="72" height="6" rx="3"/>
+                <rect x="204" y="60" width="80" height="6" rx="3"/>
+                <rect x="204" y="72" width="64" height="6" rx="3"/>
+              </g>
+              <g fill="#93c5fd">
+                <rect x="204" y="140" width="14" height="32" rx="3"/>
+                <rect x="224" y="128" width="14" height="44" rx="3"/>
+                <rect x="244" y="148" width="14" height="24" rx="3"/>
+                <rect x="264" y="118" width="14" height="54" rx="3"/>
+              </g>
+            </svg>
+            <figcaption class="text-xs text-ink-500 mt-3 text-center">Streaming chat · answer cards · detail canvas</figcaption>
+          </figure>
+        </div>
+      </article>
       <!-- Project 2 -->
       <article class="bg-white border border-line rounded-2xl p-7 md:p-9 card-shadow">
         <div class="flex flex-col lg:flex-row gap-8">
@@ -184,9 +234,10 @@
               <h3 class="text-xl md:text-2xl font-semibold text-ink-900">Frontend performance optimization</h3>
               <span class="inline-flex items-center gap-2 text-brand-700 bg-brand-50 px-3 py-1 rounded-full text-sm font-semibold whitespace-nowrap">76% faster builds</span>
             </div>
-            <p class="text-ink-600 mb-5 max-w-3xl">Cut build time by 76% by replacing Terser with esbuild, isolated heavy libraries (xlsx, ECharts, jsPDF) behind dynamic imports, and moved route-specific dependencies out of the shared bundle — meaningfully reducing the JavaScript every page had to load.</p>
+            <p class="text-ink-600 mb-5 max-w-3xl">Cut build time by 76% by replacing Terser with esbuild, and cut the shared bundle by 47% (4.0 → 2.1 MB gzip) with staged, production-verified route-level code splitting across a 62-route platform — isolating heavy libraries (xlsx, ECharts, jsPDF) behind dynamic imports with zero chunk-load errors at every stage.</p>
             <div class="flex flex-wrap gap-2 text-sm">
               <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">esbuild</span>
+              <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">Code splitting</span>
               <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">Bundle size</span>
               <span class="px-3 py-1 rounded-md bg-mist border border-line text-ink-600">Dynamic imports</span>
             </div>
